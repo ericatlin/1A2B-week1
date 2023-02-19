@@ -20,11 +20,11 @@ namespace _1A2B
                 int a = 0, b = 0;
                 for (int i = 0; i < 4; i++)
                 {
-                    arryRndnum[i] = Convert.ToString(rnd.Next(0, 9));
+                    arryRndnum[i] = Convert.ToString(rnd.Next(0, 10));
 
                     if (arryRndnum[0] == "0")
                     {
-                        arryRndnum[0] = Convert.ToString(rnd.Next(1, 9));
+                        arryRndnum[0] = Convert.ToString(rnd.Next(1, 10));
                     }
                     //第一位數字不為零
 
@@ -33,7 +33,7 @@ namespace _1A2B
                         if (arryRndnum[j] == arryRndnum[i])
                         {
                             j = 0;
-                            arryRndnum[i] = Convert.ToString(rnd.Next(0, 9));
+                            arryRndnum[i] = Convert.ToString(rnd.Next(0, 10));
                         }
                     }
                     Console.WriteLine(arryRndnum[i]);
