@@ -79,7 +79,7 @@ namespace _1A2B
                 {
                     break;
                 }
-                Console.ReadKey();
+                
             }
         }
         
