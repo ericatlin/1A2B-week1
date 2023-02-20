@@ -161,7 +161,7 @@ namespace _1.Product
                         while (true)
                         {
                             var foodItem = list.Where(x => x.category == "食品" && x.quantity > 100);
-                            Console.WriteLine($"9.食品類數量大於100的有:");
+                            Console.WriteLine($"9.食品類商品數量大於100的有:");
                             foreach (var item in foodItem)
                             {
                                 Console.Write(item.name + ",");
@@ -169,7 +169,7 @@ namespace _1.Product
                             Console.WriteLine();
                             Console.WriteLine();
 
-                            Console.WriteLine($"10.食品類數量大於100的有:");
+                            Console.WriteLine($"10.各商品類別哪些商品價格大於1000:");
                             var typeItemGroupBy = list.Where(x => x.price > 1000).GroupBy(x => x.category);
                             foreach (var item in typeItemGroupBy)
                             {
